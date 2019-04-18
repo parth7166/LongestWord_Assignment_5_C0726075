@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LongestWord_Assignment5
+namespace LongestWord_Assignment_5_C0726075
 {
     class Program
     {
@@ -15,10 +15,9 @@ namespace LongestWord_Assignment5
             Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed for processing by an Analytical Engine."));
         }
 
-        
         public String MyFunctionA(string input)
         {
-            //Write a C# program to find the longest word in a string.
+           
             string[] words = input.Split(' ');
             int wordarrayLength = words.Length;
             String longestword = words[0];
@@ -27,3 +26,7 @@ namespace LongestWord_Assignment5
             {
                 wordsLength[s] = words[s].Length;
             }
+            // loop post condition: we now jave array wordsLength which contains the lengths of each word
+
+            string currentWord = words[0];
+            string nextWord;
