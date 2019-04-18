@@ -29,4 +29,4 @@ namespace LongestWord_Assignment_5_C0726075
             // loop post condition: we now jave array wordsLength which contains the lengths of each word
 
             string currentWord = words[0];
-            string nextWord;
+            
