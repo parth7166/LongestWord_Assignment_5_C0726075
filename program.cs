@@ -17,7 +17,7 @@ namespace LongestWord_Assignment_5_C0726075
 
         public String MyFunctionA(string input)
         {
-           
+            //Write a C# program to find the longest word in a string.
             string[] words = input.Split(' ');
             int wordarrayLength = words.Length;
             String longestword = words[0];
@@ -26,7 +26,29 @@ namespace LongestWord_Assignment_5_C0726075
             {
                 wordsLength[s] = words[s].Length;
             }
-            // loop post condition: we now jave array wordsLength which contains the lengths of each word
+            
 
             string currentWord = words[0];
+            string nextWord;
+
+            for (int y = 0; y < words.Length - 1; y++)
+            {
+                currentWord = words[y];
+
+                nextWord = words[y + 1];
+                if (words[y + 1].Equals(words[y]))
+                {
+                    longestword = words[y + 1];
+                }
+
+                
+            }
+            return longestword;
+
+        }
+
+
+    }
+}
+
             
